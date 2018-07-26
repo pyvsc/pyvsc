@@ -268,11 +268,11 @@ def man2param(man_electric, man_thermal={}):
         
     #    print(tabulate(points,tablefmt='latex'))
         
-        params.update = dict(
+        params.update(dict(
         R_th_igbt_sink = R_th_igbt_sink,
         R_th_diode_sink = R_th_diode_sink,    
         R_th_sink_a = R_th_sink_a,   
-        )
+        ))
 
         if 'tau_sink' in man_thermal:
             tau_sink = man_thermal['tau_sink']
@@ -494,7 +494,7 @@ if __name__ == '__main__':
 
     params = man2param(man_electric,man_thermal)
     print(vscthmodel(1000, 0.8, 0.2, 40.0+273.15, params))
-    print(vscthmodel(np.arange(100,1500,100), 0.8, 0.2, 40.0+273.15, params))
+    #print(vscthmodel(np.arange(100,1500,100), 0.8, 0.2, 40.0+273.15, params))
         
 #    file = '/home/jmmauricio/Documents/public/jmmauricio6/RESEARCH/ARTICLES/doing/vsc_model/code/semikron_100kva/semikron_SKiiP38GB12E4V1.xls'
 ##    shs_for_param = [0,2,4,5,6] 
