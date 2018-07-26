@@ -4,7 +4,7 @@
 
 language: python
 python:
-  - "3.5"
+  - "3.6"
 
 branches:
   only:
@@ -12,10 +12,9 @@ branches:
 
 install:
   - pip install numpy  # Required
-  - pip install scipy  # Required
+  - pip install pandas  # Required
+  - pip install xlrd  # Required
   - pip install matplotlib  # Required
-  - pip install numba  # Required
-  - pip install bokeh  # Required
   - pip install .  # Test installation correctness
 
 
@@ -24,7 +23,7 @@ script:
 
 after_success:
   # Uninstall to test coverage against sources
-  - pip uninstall pydgrid -y
+  - pip uninstall pyvsc -y
   - pip install -e .
 
 sudo: false
