@@ -13,6 +13,6 @@ setup(
     packages=['pyvsc', 'pyvsc.tests'],
     classifiers=[
         'License :: OSI Approved :: BSD License',
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
     ]
 )
