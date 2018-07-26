@@ -15,4 +15,4 @@ def test_1():
     
     params = man2param(man_electric,man_thermal)
     
-    assert float(params['a_i']) == 918.4939249867964
+    assert abs(float(params['a_i']) - 918.4939)  < 0.1 
