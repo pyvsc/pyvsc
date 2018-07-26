@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+pyvsc/__init__.py
+pyvsc/arith.py
+pyvsc.egg-info/PKG-INFO
+pyvsc.egg-info/SOURCES.txt
+pyvsc.egg-info/dependency_links.txt
+pyvsc.egg-info/top_level.txt
+pyvsc/tests/__init__.py
+pyvsc/tests/test_arith.py
